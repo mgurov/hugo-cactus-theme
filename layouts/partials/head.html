@@ -8,8 +8,7 @@
 <link rel="shortcut icon" href="{{ "images/favicon.ico" | absURL }}">
 <link rel="stylesheet" href="{{ "css/style.css" | absURL }}">
 
-{{ if .Site.Params.disableHighlight }}
-{{ else }}
+{{ if not .Site.Params.disableHighlight }}
 <link rel="stylesheet" href="{{ "css/highlight.css" | absURL }}">
 {{ end }}
 {{ range .Site.Params.customCSS }}
